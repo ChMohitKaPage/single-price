@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      margin: 0;
+      border: 0;
+      padding: 0;
+      font-family: 'Karla', sans-serif;
+    }
+    .container{
+      min-height: 100vh;
+      width: 100vw;
+      display: flex;
+      background-color: aqua;
+      flex-direction: column;
+    }
+    .title{
+      width: 100vw;
+      min-height: 50vh;
+      background-color: white;
+      display: flex;
+      align-items: center;
+    }
+    .body{
+      display: flex;
+      min-height: 50vh;
+      width: 100vw;
+      flex-direction: row;
+    }
+    .blocks{
+      display: flex;
+      flex-basis: 100%;
+      /* align-content: center; */
+      justify-content: center;
+      /* border: 2px solid; */
+    }
+    .card{
+      display: block;
+      margin: auto;
+      color: white;
+      min-width: 320px;
+      min-height: 270px;
+    }
+    .content{
+      max-width: 85vw;
+      margin-left: 10vw;
+    }
+    @media screen and (max-width: 400px) {
+      .body{
+        flex-basis:auto;
+        flex-direction: column;
+      }
+      .card{
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="title">
+        <div class="content" style="display: block;">
+          <span style="color: hsl(179, 62%, 43%); font-weight: 700; font-size: 1.6rem;">Join our community</span> 
+          <br>
+          <span style="    color: hsl(71, 73%, 54%);
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin-top: 20px;
+          display: block;">30-day, hassle-free money back guarantee</span>
+          <br>
+          <span style=" color: hsl(179, 62%, 43%); font-size: 1.1rem; line-height: 24px;">
+            Gain access to our full library of tutorials along with expert code reviews. <br>
+  Perfect for any developers who are serious about honing their skills.
+          </span>
+        </div>
+      </div>
+      <div class="body">
+       
+        <div class="blocks" style="background-color: rgb(43, 179, 177);">
+          <div class="card">
+            <span style="font-size: 1.4rem; display: block; font-weight: 700;">Monthly Subscription</span><br>
+            <span style="font-size: 2rem; font-weight: 700; float: left;">$29 </span> <span style="display: inline-block; margin-top: 10px; margin-left: 15px; color: rgb(111, 215, 218);"> per month</span>
+            <br>
+            <br>
+            <span style="color: rgb(172, 248, 255);">Full access for less than &dollar;1 a day</span> 
+            <button style="display: block; width: 320px; height: 50px; border-radius: 5px; margin-top: 40px; background-color: hsl(71, 73%, 54%); color: white; border: none; box-shadow: 0 0 10px grey; font-size: 1rem;">Sign Up</button>
+          </div>
+        </div>
+        <div class="blocks" style="background-color: rgb(74, 190, 189);">
+          <div class="card">
+            <span style="font-size: 1.4rem; font-weight: 700;">Why Us</span>
+            <br>
+            <br>
+            <span style="color: rgb(171, 236, 236); line-height: 1.5;">
+              Tutorials by industry experts <br>
+  Peer &amp; expert code review <br>
+  Coding exercises <br>
+  Access to our GitHub repos <br>
+  Community forum <br>
+  Flashcard decks <br>
+  New videos every week <br>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
